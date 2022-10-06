@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+import { Outlet } from "react-router-dom";
 import Navigation from "../components/organisms/Navigation";
 
 const Root = () => {
@@ -13,7 +14,7 @@ const Root = () => {
         <div className="w-3/12 bg-slate-100 dark:bg-zinc-800 flex flex-col justify-center">
           <Navigation toggleDarkModeCB={toggleDarkMode} />
         </div>
-        <div></div>
+        <div className="min-h-screen w-9/12 dark:bg-black">{<Outlet />}</div>
       </main>
     </ThemeContext.Provider>
   );
