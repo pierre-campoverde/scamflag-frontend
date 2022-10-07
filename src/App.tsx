@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Authetication from "./routes/Authetication";
 import Review from "./routes/Review";
 import Root from "./routes/Root";
 const router = createBrowserRouter([
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: "account",
-        element: <p>user</p>,
+        element: <Authetication />,
       },
     ],
   },
