@@ -9,7 +9,7 @@ const Navigation = ({ toggleDarkModeCB }: Props) => {
   const Links = [
     { name: "Make a review", path: "/write", component: <FiEdit2 /> },
     { name: "Your reviews", path: "/reviews", component: <FiFolder /> },
-    { name: "Your account", path: "/account", component: <FiUser /> },
+    { name: "Your account", path: "/login", component: <FiUser /> },
   ];
   const className =
     "flex items-center text-blue-700 hover:bg-blue-100 p-2 items-center rounded-xl dark:text-white dark:hover:bg-zinc-600 ";

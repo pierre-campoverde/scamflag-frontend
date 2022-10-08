@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import LoginForm from "../components/organisms/LoginForm";
 
-const Authetication = () => {
+const Login = () => {
   return (
     <section className="border min-h-full flex flex-col justify-center">
       <LoginForm />
@@ -17,4 +17,4 @@ const Authetication = () => {
   );
 };
 
-export default Authetication;
+export default Login;

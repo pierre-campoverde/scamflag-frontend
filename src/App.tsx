@@ -1,7 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Authetication from "./routes/Authetication";
+import Login from "./routes/Login";
+import Authetication from "./routes/Login";
 import Review from "./routes/Review";
 import Root from "./routes/Root";
+import Signup from "./routes/Signup";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,8 +23,12 @@ const router = createBrowserRouter([
         element: <p>reviews</p>,
       },
       {
-        path: "account",
-        element: <Authetication />,
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "signup",
+        element: <Signup />,
       },
     ],
   },
