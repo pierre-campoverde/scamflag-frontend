@@ -8,7 +8,7 @@ type Props = {
 const Navigation = ({ toggleDarkModeCB }: Props) => {
   const Links = [
     { name: "Make a review", path: "/write", component: <FiEdit2 /> },
-    { name: "Your reviews", path: "/reviews", component: <FiFolder /> },
+    { name: "Your reviews", path: "/users/2/reviews", component: <FiFolder /> },
     { name: "Your account", path: "/login", component: <FiUser /> },
   ];
   const className =
@@ -16,7 +16,7 @@ const Navigation = ({ toggleDarkModeCB }: Props) => {
   const activeClassName =
     " flex bg-blue-700 text-white p-2 items-center rounded-xl dark:bg-white dark:text-black ";
   return (
-    <nav className="bg-slate-100 dark:bg-zinc-800 p-1 h-4/5 transition-all flex flex-col justify-between">
+    <nav className=" h-30  bg-slate-100 dark:bg-zinc-800 p-1 h-4/5 transition-all flex flex-col justify-between">
       <ul className="w-10/12 mx-auto border-0 ">
         <li className="mb-20">
           <Link

@@ -2,7 +2,7 @@ import { Button, Rating, TextField, Typography } from "@mui/material";
 
 const CreateReviewForm = () => {
   return (
-    <div className="border shadow-md md:w-6/12 mt-6 mx-auto rounded-xl p-3 dark:bg-zinc-900">
+    <div className="border shadow-md md:w-6/12 mt-6 mx-auto rounded-3xl p-3 dark:bg-zinc-900">
       <form action="">
         <div className="w-full p-3">
           <TextField label="URL" fullWidth />

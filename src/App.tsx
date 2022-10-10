@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./routes/Login";
 import Authetication from "./routes/Login";
 import Review from "./routes/Review";
+import Reviews from "./routes/Reviews";
 import Root from "./routes/Root";
 import Signup from "./routes/Signup";
 const router = createBrowserRouter([
@@ -19,8 +20,8 @@ const router = createBrowserRouter([
         index: true,
       },
       {
-        path: "reviews",
-        element: <p>reviews</p>,
+        path: "users/:userId/reviews",
+        element: <Reviews />,
       },
       {
         path: "login",
