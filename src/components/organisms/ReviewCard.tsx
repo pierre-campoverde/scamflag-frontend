@@ -11,7 +11,7 @@ const ReviewCard = () => {
       <div className="py-2">
         <span className="italic">Day/Month/Year</span>
       </div>
-      <div className=" h-20 overflow-hidden border">
+      <div className=" h-20 overflow-hidden  p-1">
         <p className="text-ellipsis">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
           incidunt illum exercitationem! Eaque, delectus fuga minima rem
@@ -38,7 +38,7 @@ const ReviewCard = () => {
           repudiandae non eaque provident unde odio temporibus delectus.
         </p>
       </div>
-      <div className="py-1 border flex justify-end">
+      <div className="py-1  flex justify-end">
         <Button endIcon={<MdKeyboardArrowDown />}>Options</Button>
       </div>
     </div>

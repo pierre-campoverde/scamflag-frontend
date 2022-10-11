@@ -43,11 +43,6 @@ const Navigation = ({ toggleDarkModeCB }: Props) => {
           </li>
         ))}
       </ul>
-      <div className="flex mx-auto justify-center">
-        <Button startIcon={<FiSun />} onClick={() => toggleDarkModeCB()}>
-          Turn Off Lights
-        </Button>
-      </div>
     </nav>
   );
 };
