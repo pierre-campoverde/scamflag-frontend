@@ -5,6 +5,7 @@ import Review from "./routes/Review";
 import Reviews from "./routes/Reviews";
 import Root from "./routes/Root";
 import Signup from "./routes/Signup";
+import User from "./routes/User";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "users/:userId/reviews",
         element: <Reviews />,
+      },
+      {
+        path: "users/:userId",
+        element: <User />,
       },
       {
         path: "login",
