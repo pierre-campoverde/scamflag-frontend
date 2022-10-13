@@ -4,6 +4,7 @@ import Authetication from "./routes/Login";
 import Review from "./routes/Review";
 import Reviews from "./routes/Reviews";
 import Root from "./routes/Root";
+import SearchPage from "./routes/SearchPage";
 import Signup from "./routes/Signup";
 import User from "./routes/User";
 const router = createBrowserRouter([
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        element: <p>Search</p>,
+        element: <SearchPage />,
         index: true,
       },
       {
